@@ -8,7 +8,138 @@
             "level": "Professional"
         },
         {
-            "language": "Hindi"
+            "language": "Hindi",
+            "level": "Native"
+        },
+        {
+            "language": "Punjabi",
+            "level": "Native"
         }
-    ]
+    ],
+    "contact": {
+        "phone": "7808601246",
+        "email": "siddharthkurnal.com",
+        "portfolio": "www.siddharthkurnal.com",
+        "github": "github.com/skurnal2"
+    },
+    "hobbies": [
+        "Speed Typing (Typeracer)",
+        "Outdoor Sports (Badminton, Cricket)",
+        "Indoor Sports (Table Tennis)",
+        "Learning new languages",
+        "Travelling and Exploring world",
+        "Cooking"        
+    ],
+    "education": [
+        {
+            "institute": "Northern Alberta Institute of Technology (NAIT)",
+            "program": "Digital Media and IT - Computer Software Development",
+            "start": "May 2018",
+            "end": "April 2020"
+        }
+    ],
+    "skills": [
+        {
+            "description": "Software Development using",
+            "subskills": [
+                "ASP.NET (C#, Entity Framework, LinQ)",
+                "PHP (Wordpress, WooCommerce)",
+                "JavaScript (ReactJs, VueJs, NodeJs)"
+            ]
+        },
+        {
+            "description": "Great understanding of RESTful API"            
+        },
+        {
+            "description": "Solid understanding of Object Oriented Principles"            
+        },
+        {
+            "description": "Other Languages like Java (Maven), C++, Python"
+        },
+        {
+            "description": "Mobile Development (React Native, Flutter)",
+            "subskills": [
+                "Android (Java)",
+                "iOS (Swift - XCode)"
+            ]
+        },
+        {
+            "description": "Database Development using",
+            "subskills": [
+                "T-SQL, Microsoft SQL Server",
+                "MySQL, MariaDB",
+                "ERDs and Normalization"
+            ]
+        },
+        {
+            "description": "Cloud Technologies",
+            "subskills": [
+                "Azure, Heroku"
+            ]
+        },
+        {
+            "description": "Web Designing using CSS (SASS, Bootstrap)"
+        },
+        {
+            "description": "Experience using Git (GitHub), Linux (Bash)"
+        },
+        {
+            "description": "System Analysis and Methodologies",
+            "subskills": [
+                "SDLC",
+                "Data Flow Diagrams, UML",
+                "Scrum Methodology, Agile"
+            ]
+        },
+        {
+            "description": "Software Testing Principles",
+            "subskills": [
+                "Unit Testing, Integration Testing"
+            ]
+        },
+        {
+            "description": "Marketing and Optimization",
+            "subskills": [
+                "SEO, Digital Marketing"
+            ]
+        }
+    ],
+    "workhistory": [
+        {
+            "company": "Walmart Canada",
+            "positions": [
+                {
+                    "title": "E-Commerce Associate",
+                    "from": "April 2019",
+                    "to": "January 2019"
+                },
+                {
+                    "title": "Cashier",
+                    "from": "July 2018",
+                    "to": "January 2019"
+                }
+            ]
+        }
+    ],
+    "volunteerwork": [
+        {
+            "organization": "DSGMC",
+            "position": "volunteer",
+            "from": "2012",
+            "to": "now"
+        }
+    ],
+    "awards": [
+        {
+            "organization": "APTECH",
+            "name": "Technominds Competition 2017",
+            "achievement": "1st Prize North Zone (Web Development Application)"
+        },
+        {
+            "organization": "APTECH",
+            "name": "Technochamp Competition 2017",
+            "achievement": "2nd Prize North India (PHP)"
+        }
+    ],
+    "city": "Edmonton"
 }
