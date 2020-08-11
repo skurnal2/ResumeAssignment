@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMSIO Resume JSON Reader</title>
+</head>
+<body>
+    <div id="container">
+        <div id="heading-section"></div>
+        <div id="languages-section"></div>
+        <div id="contact-section"></div>
+        <div id="hobbies-section"></div>
+        <div id="education-section"></div>
+        <div id="skills-section"></div>
+        <div id="work-history-section"></div>
+        <div id="volunteer-work-section"></div>
+        <div id="awards-section"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>      
+    $(document).ready(function() {
+        $.getJSON('json-data/resume-data.json', function(data) {                           
+            //About Heading
+            var headingDiv = $("#heading-section");
+                //Heading Name and Title          
+                $("<h1>").text(data.heading.name).appendTo(headingDiv);
+                $("<h2>").text(data.heading.title).appendTo(headingDiv);                                
+            
+                //About Me
+                $("<h3>").text("About Me").appendTo(headingDiv);
+                $("<div>").text(data.heading.about).appendTo(headingDiv);
+            
+            //Languages
+            var languagesDiv = $("#languages-section");
+                //Heading
+                $("<h3>").text("Language Proficiency").appendTo(languagesDiv);
+
+                //List
+                var languageList = $("<tr>").appendTo(languagesDiv);
+                //Loop
+                $(data.languages).each(function(index, value) {
+                    languagesDiv.append($("<li>").append(value.language)
+                                                 .append(" ("+value.level+")"))
+                });            
+        });
+    });
+    </script>
+</body>
+</html>

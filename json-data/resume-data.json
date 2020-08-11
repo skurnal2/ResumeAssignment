@@ -1,7 +1,9 @@
-{
-    "name": "Siddharth Kurnal",
-    "title": "Software Developer",
-    "about": "I have been a code lover for past 5 years. Looking at an IDE or a Text Editor always gets me excited to make something great. I love doing programming and have experimented with many languages and techniques. I am always up for programming challenges and ready to ace them. My main goal is to write beautiful and fast code.",
+{    
+    "heading":{
+        "name": "Siddharth Kurnal",
+        "title": "Software Developer",
+        "about": "I have been a code lover for past 5 years. Looking at an IDE or a Text Editor always gets me excited to make something great. I love doing programming and have experimented with many languages and techniques. I am always up for programming challenges and ready to ace them. My main goal is to write beautiful and fast code."
+    },
     "languages": [
         {
             "language": "English",
