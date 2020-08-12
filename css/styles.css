@@ -82,6 +82,7 @@ h3 {
     padding: calc(3vw * var(--scale));
     padding-right: calc(2.5vw * var(--scale));
     margin-right: -1px;
+    margin-top: -1px;
     border-bottom-left-radius: 60%;
 
     /* Adding Height and Padding to give correct border-radius effect */    
@@ -297,9 +298,31 @@ h3 {
 
 /* Printing */
 @media only print {
+    /* @media only screen and (max-width: 1366px) { */
     :root {
-        --view-height: calc(78vw * 1.6);
-        --view-width: calc(60vw * 1.6);
-        --scale: 1.6;
-    }    
+        --view-height: calc(78vw * 1.63);
+        --view-width: calc(60vw * 1.63);
+        --scale: 1.63;
+    }
+
+    .container {
+        margin: 0 auto;
+        box-shadow: none;
+        
+        /* Changing Font because Raleway shows abnormally when printing */
+        font-family: 'Arimo', sans-serif;       
+    }  
+
+    /* Removing Extra Spaces */
+    .area-two {
+        margin-right: -2px;        
+    }
+
+    body {
+        background-color: transparent;
+        margin: auto;
+    }
+
+    /* Removing Extra Details when Printing */
+    @page { margin: 0; }        
 }
