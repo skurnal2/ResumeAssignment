@@ -147,6 +147,22 @@
                         });
                     }
                 });
+            
+            //Awards
+            var awardsDiv = $('#awards-section');
+                //Heading
+                $("<h3>").text("Coding Awards and Certificates").appendTo(awardsDiv);
+                
+                var awardsList = $("<ul>").appendTo(awardsDiv);
+
+                //Loop through Awards
+                $(data.awards).each(function(index, value) {
+                     var anAward = awardsList.append($("<li>").append(value.organization)
+                                                    .append(value.name ? " " + value.name : "" )
+                                                    .append(value.achievement ? " - " + value.achievement : ""));
+                     
+                     
+                 });
 
 
         });
