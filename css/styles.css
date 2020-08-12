@@ -8,8 +8,7 @@
     box-shadow: 0 3px 6px -4px midnightblue;       
     height: 78vw;
     width: 60vw;
-    margin: auto;
-    margin-top: 2rem;
+    margin: 2rem auto 2rem auto;    
     background-image: url(../images/background.png);
     background-size: cover;
     overflow: hidden;
@@ -19,69 +18,66 @@
 
     /* GRID */
     display: grid;
-    grid-template-columns: 8fr 10fr;
+    grid-template-columns: 7fr 10fr;
     grid-template-areas: 
         "area-one area-two";
 }
 
-.area-one {
-    grid-area: area-one;
-}
-
-.area-two {
-    grid-area: area-two;
-}
-
-/* Area One */
-.area-one {
-    color: white;  
-    padding: 2.5vw;  
-    padding-right: 0.4rem;
-}
-
-.area-one h3 {
-    text-transform: uppercase;
-    font-size: 1.5vw;
-}
-
-/* Area Two */
-.area-two {
-    background-color: white;    
-    padding: 3vw;
-}
-
-.area-two h3 {
+/* Common Values */
+h3 {
     text-transform: uppercase;
     font-size: 1.3vw;
 }
 
+/* Area One */
+.area-one {
+    grid-area: area-one;
+    color: white;  
+    padding: 2.5vw;  
+    padding-right: 1rem;
+    padding-left: 3vw;
+    padding-top: 3.2vw;
+}
 
+/* Area Two */
+.area-two {
+    grid-area: area-two;
+    border-bottom-left-radius: 45%;
+    background-color: white;    
+    padding: 3vw;
+    padding-right: 2.5vw;    
+    -webkit-box-shadow: 4px 19px 0px 4px rgba(0,0,0,0.46);
+    -moz-box-shadow: 4px 19px 0px 4px rgba(0,0,0,0.46);
+    box-shadow: 4px 19px 0px 4px rgba(0,0,0,0.46);
+}
 
 /* Heading Section */
 #heading-section h1{
     font-family: "aileron", "sans-serif";
     text-transform: uppercase;
-    font-size: 3vw;
+    font-size: 2.8vw;
 }
 
 #heading-section h2{    
     text-transform: uppercase;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: 100;
+    margin: .8vw 0;
 }
 
 #heading-section h3{
-    margin-top: 4.5vw;
+    margin-top: 5vw;
 }
 
 #heading-section div {
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-top: 1vw;
+    font-weight: 300;
 }
 
 /* Languages Section */
 #languages-section {
-    margin-top: 2vw;
+    margin-top: 2.5vw;
 }
 
 #languages-section ul {
@@ -90,12 +86,13 @@
 
 #languages-section ul li {
     margin-left: 2vw;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    font-weight: 300;
 }
 
 /* Contact Section */
 #contact-section {
-    margin-top: 2vw;
+    margin-top: 3vw;
 }
 
 #contact-section h3 {
@@ -105,8 +102,9 @@
 
 #contact-section > div {
     text-transform: capitalize;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: bold;
+    margin-top: .2vw;
 }
 
 #contact-section > div > span {
@@ -116,7 +114,7 @@
 
 /* Hobbies Section */
 #hobbies-section {
-    margin-top: 4vw;
+    margin-top: 5vw;
 }
 
 #hobbies-section ul {
@@ -125,7 +123,8 @@
 
 #hobbies-section ul li{
     margin-left: 2vw;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    margin-top: .1vw
 }
 
 /* Education Section */
@@ -158,11 +157,26 @@
 #skills-section > ul > li{
     margin-left: 2vw;
     font-size: 1.1vw;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 #skills-section ul li ul{
     margin-left: 3vw;
     font-weight: normal;    
+}
+
+/* Work History Section */
+#work-history-section {
+    margin-top: 1vw;
+    font-size: 1.2vw;
+}
+
+#work-history-section div {
+    margin-top: 1vw;
+}
+
+#work-history-section > ul > li{
+    margin-left: 2vw;
+    font-size: 1.1vw;    
 }
 
