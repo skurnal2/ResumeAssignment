@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {    
+
+    height: 78vw;
+    width: 60vw;
+    margin: auto;
+    margin-top: 2rem;
+    background-image: url(../images/background.png);
+    background-size: cover;
+
+    /* Font */
+    font-family: 'Raleway', sans-serif;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-template-areas: 
+        "area-one area-two";
+}
+
+.area-one {
+    grid-area: area-one;
+}
+
+.area-two {
+    grid-area: area-two;
+}
+
+.container > div {
+    padding: 2rem;
+}
+
+/* Common Values */
+h3 {
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+/* Area One */
+.area-one {
+    color: white;
+}
+
+/* Area Two */
+.area-two {
+    background-color: white;
+    opacity: .8;
+}
+
+
+
+/* Heading Section */
+#heading-section h1{
+    font-family: "aileron", "sans-serif";
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+#heading-section h2{    
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
