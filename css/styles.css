@@ -4,11 +4,16 @@
     padding: 0;
 }
 
+:root {
+    --view-height: 78vw;
+    --view-width: 60vw;
+}
+
 .container {    
-    box-shadow: 0 3px 6px -4px midnightblue;       
-    height: 78vw;
-    width: 60vw;
-    margin: 2rem auto 2rem auto;    
+    box-shadow: 0 3px 8px -4px midnightblue;       
+    height: var(--view-height);
+    width: var(--view-width);
+    margin: 3vw auto 3vw auto;    
     background-image: url(../images/background.png);
     background-size: cover;
     overflow: hidden;
@@ -33,8 +38,7 @@ h3 {
 .area-one {
     grid-area: area-one;
     color: white;  
-    padding: 2.5vw;  
-    padding-right: 1rem;
+    padding: 2.5vw;      
     padding-left: 3vw;
     padding-top: 3.2vw;
 }
@@ -42,13 +46,18 @@ h3 {
 /* Area Two */
 .area-two {
     grid-area: area-two;
-    border-bottom-left-radius: 45%;
-    background-color: white;    
     padding: 3vw;
-    padding-right: 2.5vw;    
-    -webkit-box-shadow: 4px 19px 0px 4px rgba(0,0,0,0.46);
-    -moz-box-shadow: 4px 19px 0px 4px rgba(0,0,0,0.46);
-    box-shadow: 4px 19px 0px 4px rgba(0,0,0,0.46);
+    padding-right: 2.5vw;
+    border-bottom-left-radius: 45%;
+
+    /* Adding Height and Padding to give correct border-radius effect */    
+    padding-bottom: calc(var(--view-height) + 17vw - var(--view-height));
+    background-color: white;    
+        
+    /* -webkit-box-shadow: 4px 150px 0px 4px rgba(0,0,0,0.46);
+    -moz-box-shadow: 4px 150px 0px 4px rgba(0,0,0,0.46); 
+    box-shadow: 4px 150px 0px 4px rgba(0,0,0,0.46);*/
+    box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
 }
 
 /* Heading Section */
@@ -190,7 +199,7 @@ h3 {
 
 /* Work History Section */
 #work-history-section {
-    margin-top: 1vw;
+    margin-top: 2vw;
     font-size: 1.2vw;
 }
 
@@ -201,5 +210,40 @@ h3 {
 #work-history-section > ul > li{
     margin-left: 2vw;
     font-size: 1.1vw;    
+}
+
+
+/* Volunteer Work Section */
+#volunteer-work-section {
+    margin-top: 2vw;
+    margin-left: 1.2vw;
+}
+
+#volunteer-work-section > div {
+    margin-top: 1vw;
+}
+
+#volunteer-work-section > div, #volunteer-work-section > ul {
+    font-size: 1.2vw;
+}
+
+#volunteer-work-section > ul {
+    margin-left: 3vw;
+}
+
+/* Awards Section */
+#awards-section {
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+#awards-section ul {
+    margin-top: 1vw;
+    margin-left: 2vw;
+    font-size: 1vw;    
+}
+
+#awards-section ul li {
+    margin-top: 1vw;
 }
 
