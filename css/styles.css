@@ -7,10 +7,15 @@
 :root {
     --view-height: 78vw;
     --view-width: 60vw;
+    --scale: 1;
+}
+
+body {
+    background-color: #525659;
 }
 
 .container {    
-    box-shadow: 0 3px 8px -4px midnightblue;       
+    box-shadow: 0 3px 8px -4px black;       
     height: var(--view-height);
     width: var(--view-width);
     margin: 3vw auto 3vw auto;    
@@ -48,7 +53,7 @@ h3 {
 /* Corner Section */
 #corner-section {
     position: absolute;
-    bottom: 9vw;
+    bottom: 9.5vw;
     left: -2vw;          
 }
 
@@ -62,7 +67,7 @@ h3 {
 #location-name {
     position: absolute;
     font-weight: bold;
-    bottom: 11vw;
+    bottom: 12vw;
     left: 2.5vw;
     font-size: 2.3vw;
     color: white;
@@ -76,14 +81,15 @@ h3 {
     grid-area: area-two;
     padding: 3vw;
     padding-right: 2.5vw;
+    margin-right: -1px;
     border-bottom-left-radius: 60%;
 
     /* Adding Height and Padding to give correct border-radius effect */    
     padding-bottom: calc(var(--view-height) + 14vw - var(--view-height));
     background-color: white;    
         
-    /* -webkit-box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
-    -moz-box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46); */
+    -webkit-box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
+    -moz-box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
     box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
 }
 
@@ -272,4 +278,11 @@ h3 {
 
 #awards-section ul li {
     margin-top: 1vw;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1366px) {
+    :root {
+        scale: 1.764;
+    }
 }
