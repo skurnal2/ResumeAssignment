@@ -52,7 +52,7 @@ h3 {
 /* Corner Section */
 #corner-section {
     position: absolute;
-    bottom: calc(10.5vw * var(--scale));
+    bottom: calc(9vw * var(--scale));
     left: calc(-4vw * var(--scale));         
     filter: grayscale(1);      
     width: calc(40vw * var(--scale));
