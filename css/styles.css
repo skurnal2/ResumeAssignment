@@ -293,8 +293,7 @@ h3 {
 }
 
 /* Printing */
-@media only print {
-    /* @media only screen and (max-width: 1366px) { */
+@media only print {    
     :root {
         --view-height: calc(78vw * 1.63);
         --view-width: calc(60vw * 1.63);
