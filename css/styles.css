@@ -63,6 +63,17 @@ h3 {
     font-size: 1.2vw;
     font-weight: 100;
     margin: .8vw 0;
+    position: relative;
+}
+
+#heading-section h2::after {
+    position: absolute;
+    height: .3vw;
+    width: 4vw;
+    background-color: white;
+    content: "";
+    top: 3vw;
+    left: 0;
 }
 
 #heading-section h3{
@@ -115,6 +126,18 @@ h3 {
 /* Hobbies Section */
 #hobbies-section {
     margin-top: 5vw;
+    position: relative;
+}
+
+
+#hobbies-section::before {
+    position: absolute;
+    height: .4vw;
+    width: 5vw;
+    background-color: white;
+    content: "";
+    top: -3vw;
+    left: 0;
 }
 
 #hobbies-section ul {
