@@ -18,12 +18,24 @@
             "level": "Native"
         }
     ],
-    "contact": {
-        "phone": "7808601246",
-        "email": "siddharthkurnal.com",
-        "portfolio": "www.siddharthkurnal.com",
-        "github": "github.com/skurnal2"
-    },
+    "contact": [
+        {
+            "method": "phone",
+            "description": "7808601246"
+        },
+        {
+            "method": "email",
+            "description": "siddharthkurnal.com"
+        },
+        {
+            "method": "portfolio",
+            "description": "www.siddharthkurnal.com"
+        },
+        {
+            "method": "github",
+            "description": "github.com/skurnal2"
+        }
+    ],
     "hobbies": [
         "Speed Typing (Typeracer)",
         "Outdoor Sports (Badminton, Cricket)",

@@ -43,7 +43,31 @@
                 $(data.languages).each(function(index, value) {
                     languagesDiv.append($("<li>").append(value.language)
                                                  .append(" ("+value.level+")"))
-                });            
+                });
+            
+            //Contact
+            var contactDiv = $("#contact-section");
+                //Heading
+                $("<h3>").text("Let's Get in Touch").appendTo(contactDiv);
+                //Loop through Contacts
+                $(data.contact).each(function(index, value) {                    
+                    var aContact = $("<div>"+value.method+": </div>")
+                                        .append("<span>"+value.description+"</span>");
+                    contactDiv.append(aContact);
+                });
+
+            //Hobbies
+            var hobbiesDiv = $('#hobbies-section');
+                //Heading
+                $("<h3>").text("Hobbies").appendTo(hobbiesDiv);
+
+                //UL List Variable
+                var hobbiesList = $("<tr>").appendTo(hobbiesDiv);
+
+                //Loop through hobbies
+                $(data.hobbies).each(function(index, value) {
+                    hobbiesDiv.append($("<li>").append(value));
+                });
         });
     });
     </script>
