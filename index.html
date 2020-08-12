@@ -126,6 +126,29 @@
                     }
                 });
 
+            //Volunteer Work
+            var volunteerWorkDiv = $('#volunteer-work-section');
+                //Heading
+                $("<h3>").text("Volunteer Work").appendTo(volunteerWorkDiv);
+                
+               //Loop through Volunteer Work
+               $(data.volunteerwork).each(function(index, value) {
+                    var aVolunteer = volunteerWorkDiv.append($("<div>").append(value.organization));
+                    
+                    //If positions exist, showing them
+                    if(value.positions) {
+                        var posList = $("<ul>").appendTo(aVolunteer);
+                        $(value.positions).each(function(posIndex, posValue) {
+                            var anItem = $("<li>").append(posValue.title).appendTo(posList);
+
+                            if(posValue.from && posValue.to) {
+                                anItem.append(" (" + posValue.from + " - " + posValue.to + ")");
+                            }
+                        });
+                    }
+                });
+
+
         });
     });
     </script>
