@@ -16,8 +16,12 @@
             <div id="heading-section"></div>
             <div id="languages-section"></div>
             <div id="contact-section"></div>
-            <div id="hobbies-section"></div>
-        </div>   
+            <div id="hobbies-section"></div> 
+            <div id="corner-section">
+                <img src='./images/skyscrapers.png'/>                
+            </div>         
+            <span id="location-name"></span>  
+        </div>
         <div class="area-two">
             <div id="education-section"></div>
             <div id="skills-section"></div>
@@ -178,6 +182,9 @@
                  $('li', $('#awards-list')).each(function(index, element) {
                       $(element).css("margin-left", index*2 + "vw");                
                  });
+
+            //Corner-Section (Setting Location Name)
+            $('#location-name').append(data.location);                
 
         });
     });

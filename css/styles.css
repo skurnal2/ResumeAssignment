@@ -37,26 +37,53 @@ h3 {
 /* Area One */
 .area-one {
     grid-area: area-one;
+    position: relative;
     color: white;  
     padding: 2.5vw;      
+    padding-right: 1vw;
     padding-left: 3vw;
     padding-top: 3.2vw;
 }
 
+/* Corner Section */
+#corner-section {
+    position: absolute;
+    bottom: 9vw;
+    left: -2vw;          
+}
+
+#corner-section img {
+    /* max-height: 40vw; */
+    filter: grayscale(1);      
+    width: 40vw;
+    height: 14vw
+}
+
+#location-name {
+    position: absolute;
+    font-weight: bold;
+    bottom: 11vw;
+    left: 2.5vw;
+    font-size: 2.3vw;
+    color: white;
+    opacity: .2;
+}
+
+
 /* Area Two */
 .area-two {
+    position: relative;
     grid-area: area-two;
     padding: 3vw;
     padding-right: 2.5vw;
-    border-bottom-left-radius: 45%;
+    border-bottom-left-radius: 60%;
 
     /* Adding Height and Padding to give correct border-radius effect */    
-    padding-bottom: calc(var(--view-height) + 17vw - var(--view-height));
+    padding-bottom: calc(var(--view-height) + 14vw - var(--view-height));
     background-color: white;    
         
-    /* -webkit-box-shadow: 4px 150px 0px 4px rgba(0,0,0,0.46);
-    -moz-box-shadow: 4px 150px 0px 4px rgba(0,0,0,0.46); 
-    box-shadow: 4px 150px 0px 4px rgba(0,0,0,0.46);*/
+    /* -webkit-box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
+    -moz-box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46); */
     box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
 }
 
@@ -156,7 +183,7 @@ h3 {
 #hobbies-section ul li{
     margin-left: 2vw;
     font-size: 1vw;
-    margin-top: .1vw
+    margin-top: .4vw
 }
 
 /* Education Section */
@@ -234,7 +261,7 @@ h3 {
 /* Awards Section */
 #awards-section {
     margin-top: 2vw;
-    margin-left: 2vw;
+    margin-left: 3vw;
 }
 
 #awards-section ul {
@@ -246,4 +273,3 @@ h3 {
 #awards-section ul li {
     margin-top: 1vw;
 }
-
