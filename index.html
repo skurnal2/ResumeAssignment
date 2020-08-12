@@ -18,9 +18,7 @@
             <div id="languages-section"></div>
             <div id="contact-section"></div>
             <div id="hobbies-section"></div> 
-            <div id="corner-section">
-                <img src='./images/skyscrapers.png'/>                
-            </div>         
+            <div id="corner-section"></div>            
             <span id="location-name"></span>  
         </div>
         <div class="area-two">
@@ -36,7 +34,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
     <script>      
     $(document).ready(function() {
-        //Reading JSON File
+        //Reading JSON Resume File
         $.getJSON('json-data/resume-data.json', function(data) {                           
             //About Heading
             var headingDiv = $("#heading-section");
@@ -187,6 +185,12 @@
             //Corner-Section (Setting Location Name)
             $('#location-name').append(data.location);                
 
+        });
+
+        //Reading JSON Picture Data
+        $.getJSON('json-data/picture-data.json', function(data) {                           
+            $(".container").css("background-image", "url("+data.backgroundpicture+")");   
+            $("#corner-section").css("background-image", "url("+data.skylinepicture+")");            
         });
     });
     </script>

@@ -18,8 +18,7 @@ body {
     box-shadow: 0 3px 8px -4px black;       
     height: var(--view-height);
     width: var(--view-width);
-    margin: calc(3vw * var(--scale)) auto calc(3vw * var(--scale)) auto;    
-    background-image: url(../images/background.png);
+    margin: calc(3vw * var(--scale)) auto calc(3vw * var(--scale)) auto;        
     background-size: cover;
     overflow: hidden;
 
@@ -53,15 +52,12 @@ h3 {
 /* Corner Section */
 #corner-section {
     position: absolute;
-    bottom: calc(9.5vw * var(--scale));
-    left: calc(-2vw * var(--scale));          
-}
-
-#corner-section img {
-    /* max-height: 4calc(0vw * var(--scale)); */
+    bottom: calc(10.5vw * var(--scale));
+    left: calc(-4vw * var(--scale));         
     filter: grayscale(1);      
     width: calc(40vw * var(--scale));
-    height: calc(14vw * var(--scale))
+    height: calc(14vw * var(--scale));
+    background-size: cover;
 }
 
 #location-name {
