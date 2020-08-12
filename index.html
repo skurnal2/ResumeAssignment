@@ -103,7 +103,7 @@
 
                 //Loop through Skills
                 $(data.skills).each(function(index, value) {
-                    var listItem = skillsList.append($("<li>").append(value.description));
+                    var listItem = $("<li>").append(value.description).appendTo(skillsList);
                     
                     //If subskills exist, showing them
                     if(value.subskills) {

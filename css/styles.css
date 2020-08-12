@@ -5,20 +5,21 @@
 }
 
 .container {    
-
+    box-shadow: 0 3px 6px -4px midnightblue;       
     height: 78vw;
     width: 60vw;
     margin: auto;
     margin-top: 2rem;
     background-image: url(../images/background.png);
     background-size: cover;
+    overflow: hidden;
 
     /* Font */
     font-family: 'Raleway', sans-serif;
 
     /* GRID */
     display: grid;
-    grid-template-columns: 5fr 6fr;
+    grid-template-columns: 8fr 10fr;
     grid-template-areas: 
         "area-one area-two";
 }
@@ -31,25 +32,27 @@
     grid-area: area-two;
 }
 
-.container > div {
-    padding: 2rem;
+/* Area One */
+.area-one {
+    color: white;  
+    padding: 2.5vw;  
+    padding-right: 0.4rem;
 }
 
-/* Common Values */
-h3 {
+.area-one h3 {
     text-transform: uppercase;
     font-size: 1.5vw;
 }
 
-/* Area One */
-.area-one {
-    color: white;
-}
-
 /* Area Two */
 .area-two {
-    background-color: white;
-    opacity: .8;
+    background-color: white;    
+    padding: 3vw;
+}
+
+.area-two h3 {
+    text-transform: uppercase;
+    font-size: 1.3vw;
 }
 
 
@@ -65,5 +68,101 @@ h3 {
     text-transform: uppercase;
     font-size: 1.5vw;
     font-weight: 100;
+}
+
+#heading-section h3{
+    margin-top: 4.5vw;
+}
+
+#heading-section div {
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
+
+/* Languages Section */
+#languages-section {
+    margin-top: 2vw;
+}
+
+#languages-section ul {
+    margin-top: 1vw;
+}
+
+#languages-section ul li {
+    margin-left: 2vw;
+    font-size: 1.2vw;
+}
+
+/* Contact Section */
+#contact-section {
+    margin-top: 2vw;
+}
+
+#contact-section h3 {
+    text-transform: capitalize;
+    margin-bottom: 1vw;
+}
+
+#contact-section > div {
+    text-transform: capitalize;
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+#contact-section > div > span {
+    text-transform: lowercase;   
+    font-weight: normal; 
+}
+
+/* Hobbies Section */
+#hobbies-section {
+    margin-top: 4vw;
+}
+
+#hobbies-section ul {
+    margin-top: 1vw;
+}
+
+#hobbies-section ul li{
+    margin-left: 2vw;
+    font-size: 1.2vw;
+}
+
+/* Education Section */
+#education-section {
+    font-size: 1.21vw;
+}
+
+.institute {
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
+.program {
+    margin-top: .7vw;
+}
+
+.program span{
+    font-weight: bold;
+}
+
+/* Skills Section */
+#skills-section {
+    margin-top: 1vw;
+}
+
+#skills-section  > ul {
+    margin-top: 1vw;
+}
+
+#skills-section > ul > li{
+    margin-left: 2vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+#skills-section ul li ul{
+    margin-left: 3vw;
+    font-weight: normal;    
 }
 
