@@ -21,6 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>      
     $(document).ready(function() {
+        //Reading JSON File
         $.getJSON('json-data/resume-data.json', function(data) {                           
             //About Heading
             var headingDiv = $("#heading-section");
@@ -38,10 +39,10 @@
                 $("<h3>").text("Language Proficiency").appendTo(languagesDiv);
 
                 //List
-                var languageList = $("<tr>").appendTo(languagesDiv);
+                var languageList = $("<ul>").appendTo(languagesDiv);
                 //Loop
                 $(data.languages).each(function(index, value) {
-                    languagesDiv.append($("<li>").append(value.language)
+                    languageList.append($("<li>").append(value.language)
                                                  .append(" ("+value.level+")"))
                 });
             
@@ -62,11 +63,45 @@
                 $("<h3>").text("Hobbies").appendTo(hobbiesDiv);
 
                 //UL List Variable
-                var hobbiesList = $("<tr>").appendTo(hobbiesDiv);
+                var hobbiesList = $("<ul>").appendTo(hobbiesDiv);
 
                 //Loop through hobbies
                 $(data.hobbies).each(function(index, value) {
-                    hobbiesDiv.append($("<li>").append(value));
+                    hobbiesList.append($("<li>").append(value));
+                });
+            
+            //Education
+            var educationDiv = $('#education-section');
+                //Heading
+                $("<h3>").text("Education").appendTo(educationDiv);
+                
+                //Education List
+                $(data.education).each(function(index, value) {
+                    var institute = $("<div class='institute'>").text(value.institute);
+                    var program = $("<div class='program'>").append(value.program).append("<span> "+value.score+"</span>");
+                    var duration = $("<div class='duration'>").text(value.start + " - " + value.end);
+                    educationDiv.append(institute, program, duration);
+                });
+            
+            //Skills
+            var skillsDiv = $('#skills-section');
+                //Heading
+                $("<h3>").text("Skills").appendTo(skillsDiv);
+
+                //UL List Variable
+                var skillsList = $("<ul>").appendTo(skillsDiv);
+
+                //Loop through Skills
+                $(data.skills).each(function(index, value) {
+                    var listItem = skillsList.append($("<li>").append(value.description));
+                    
+                    //If subskills exist, showing them
+                    if(value.subskills) {
+                        var subList = $("<ul>").appendTo(listItem);
+                        $(value.subskills).each(function(subIndex, subValue) {
+                            subList.append($("<li>").append(subValue));
+                        });
+                    }
                 });
         });
     });
