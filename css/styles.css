@@ -18,7 +18,7 @@ body {
     box-shadow: 0 3px 8px -4px black;       
     height: var(--view-height);
     width: var(--view-width);
-    margin: 3vw auto 3vw auto;    
+    margin: calc(3vw * var(--scale)) auto calc(3vw * var(--scale)) auto;    
     background-image: url(../images/background.png);
     background-size: cover;
     overflow: hidden;
@@ -36,7 +36,7 @@ body {
 /* Common Values */
 h3 {
     text-transform: uppercase;
-    font-size: 1.3vw;
+    font-size: calc(1.3vw * var(--scale));
 }
 
 /* Area One */
@@ -44,32 +44,32 @@ h3 {
     grid-area: area-one;
     position: relative;
     color: white;  
-    padding: 2.5vw;      
-    padding-right: 1vw;
-    padding-left: 3vw;
-    padding-top: 3.2vw;
+    padding: calc(2.5vw * var(--scale));      
+    padding-right: calc(1vw * var(--scale));
+    padding-left: calc(3vw * var(--scale));
+    padding-top: calc(3.2vw * var(--scale));
 }
 
 /* Corner Section */
 #corner-section {
     position: absolute;
-    bottom: 9.5vw;
-    left: -2vw;          
+    bottom: calc(9.5vw * var(--scale));
+    left: calc(-2vw * var(--scale));          
 }
 
 #corner-section img {
-    /* max-height: 40vw; */
+    /* max-height: 4calc(0vw * var(--scale)); */
     filter: grayscale(1);      
-    width: 40vw;
-    height: 14vw
+    width: calc(40vw * var(--scale));
+    height: calc(14vw * var(--scale))
 }
 
 #location-name {
     position: absolute;
     font-weight: bold;
-    bottom: 12vw;
-    left: 2.5vw;
-    font-size: 2.3vw;
+    bottom: calc(12vw * var(--scale));
+    left: calc(2.5vw * var(--scale));
+    font-size: calc(2.3vw * var(--scale));
     color: white;
     opacity: .2;
 }
@@ -79,85 +79,85 @@ h3 {
 .area-two {
     position: relative;
     grid-area: area-two;
-    padding: 3vw;
-    padding-right: 2.5vw;
+    padding: calc(3vw * var(--scale));
+    padding-right: calc(2.5vw * var(--scale));
     margin-right: -1px;
     border-bottom-left-radius: 60%;
 
     /* Adding Height and Padding to give correct border-radius effect */    
-    padding-bottom: calc(var(--view-height) + 14vw - var(--view-height));
+    padding-bottom: calc(var(--view-height) + calc(14vw * var(--scale)) - var(--view-height));
     background-color: white;    
         
-    -webkit-box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
-    -moz-box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
-    box-shadow: 2vw 4vw 0vw 2vw rgba(0,0,0,0.46);
+    -webkit-box-shadow: calc(2vw * var(--scale)) calc(4vw * var(--scale)) calc(0vw * var(--scale)) calc(2vw * var(--scale)) rgba(0,0,0,0.46);
+    -moz-box-shadow: calc(2vw * var(--scale)) calc(4vw * var(--scale)) calc(0vw * var(--scale)) calc(2vw * var(--scale)) rgba(0,0,0,0.46);
+    box-shadow: calc(2vw * var(--scale)) calc(4vw * var(--scale)) calc(0vw * var(--scale)) calc(2vw * var(--scale)) rgba(0,0,0,0.46);
 }
 
 /* Heading Section */
 #heading-section h1{
     font-family: "aileron", "sans-serif";
     text-transform: uppercase;
-    font-size: 2.8vw;
+    font-size: calc(2.8vw * var(--scale));
 }
 
 #heading-section h2{    
     text-transform: uppercase;
-    font-size: 1.2vw;
+    font-size: calc(1.2vw * var(--scale));
     font-weight: 100;
-    margin: .8vw 0;
+    margin: calc(.8vw * var(--scale)) 0;
     position: relative;
 }
 
 #heading-section h2::after {
     position: absolute;
-    height: .3vw;
-    width: 4vw;
+    height: calc(.3vw * var(--scale));
+    width: calc(4vw * var(--scale));
     background-color: white;
     content: "";
-    top: 3vw;
+    top: calc(3vw * var(--scale));
     left: 0;
 }
 
 #heading-section h3{
-    margin-top: 5vw;
+    margin-top: calc(5vw * var(--scale));
 }
 
 #heading-section div {
-    font-size: 1vw;
-    margin-top: 1vw;
+    font-size: calc(1vw * var(--scale));
+    margin-top: calc(1vw * var(--scale));
     font-weight: 300;
 }
 
 /* Languages Section */
 #languages-section {
-    margin-top: 2.5vw;
+    margin-top: calc(2.5vw * var(--scale));
 }
 
 #languages-section ul {
-    margin-top: 1vw;
+    margin-top: calc(1vw * var(--scale));
 }
 
 #languages-section ul li {
-    margin-left: 2vw;
-    font-size: 1.1vw;
+    margin-left: calc(2vw * var(--scale));
+    font-size: calc(1.1vw * var(--scale));
     font-weight: 300;
 }
 
 /* Contact Section */
 #contact-section {
-    margin-top: 3vw;
+    margin-top: calc(3vw * var(--scale));
 }
 
 #contact-section h3 {
     text-transform: capitalize;
-    margin-bottom: 1vw;
+    margin-bottom: calc(1vw * var(--scale));
 }
 
 #contact-section > div {
     text-transform: capitalize;
-    font-size: 1.2vw;
+    font-size: calc(1.2vw * var(--scale));
     font-weight: bold;
-    margin-top: .2vw;
+    margin-top: calc(.2vw * var(--scale));
 }
 
 #contact-section > div > span {
@@ -167,43 +167,43 @@ h3 {
 
 /* Hobbies Section */
 #hobbies-section {
-    margin-top: 5vw;
+    margin-top: calc(5vw * var(--scale));
     position: relative;
 }
 
 
 #hobbies-section::before {
     position: absolute;
-    height: .4vw;
-    width: 5vw;
+    height: calc(.4vw * var(--scale));
+    width: calc(5vw * var(--scale));
     background-color: white;
     content: "";
-    top: -3vw;
+    top: calc(-3vw * var(--scale));
     left: 0;
 }
 
 #hobbies-section ul {
-    margin-top: 1vw;
+    margin-top: calc(1vw * var(--scale));
 }
 
 #hobbies-section ul li{
-    margin-left: 2vw;
-    font-size: 1vw;
-    margin-top: .4vw
+    margin-left: calc(2vw * var(--scale));
+    font-size: calc(1vw * var(--scale));
+    margin-top: calc(.4vw * var(--scale))
 }
 
 /* Education Section */
 #education-section {
-    font-size: 1.21vw;
+    font-size: calc(1.21vw * var(--scale));
 }
 
 .institute {
     font-weight: bold;
-    margin-top: 1vw;
+    margin-top: calc(1vw * var(--scale));
 }
 
 .program {
-    margin-top: .7vw;
+    margin-top: calc(.7vw * var(--scale));
 }
 
 .program span{
@@ -212,77 +212,94 @@ h3 {
 
 /* Skills Section */
 #skills-section {
-    margin-top: 1vw;
+    margin-top: calc(1vw * var(--scale));
 }
 
 #skills-section  > ul {
-    margin-top: 1vw;
+    margin-top: calc(1vw * var(--scale));
 }
 
 #skills-section > ul > li{
-    margin-left: 2vw;
-    font-size: 1.1vw;
+    margin-left: calc(2vw * var(--scale));
+    font-size: calc(1.1vw * var(--scale));
     font-weight: 600;
 }
 
 #skills-section ul li ul{
-    margin-left: 3vw;
+    margin-left: calc(3vw * var(--scale));
     font-weight: normal;    
 }
 
 /* Work History Section */
 #work-history-section {
-    margin-top: 2vw;
-    font-size: 1.2vw;
+    margin-top: calc(2vw * var(--scale));
+    font-size: calc(1.2vw * var(--scale));
 }
 
 #work-history-section div {
-    margin-top: 1vw;
+    margin-top: calc(1vw * var(--scale));
 }
 
 #work-history-section > ul > li{
-    margin-left: 2vw;
-    font-size: 1.1vw;    
+    margin-left: calc(2vw * var(--scale));
+    font-size: calc(1.1vw * var(--scale));    
 }
 
 
 /* Volunteer Work Section */
 #volunteer-work-section {
-    margin-top: 2vw;
-    margin-left: 1.2vw;
+    margin-top: calc(2vw * var(--scale));
+    margin-left: calc(1.2vw * var(--scale));
 }
 
 #volunteer-work-section > div {
-    margin-top: 1vw;
+    margin-top: calc(1vw * var(--scale));
 }
 
 #volunteer-work-section > div, #volunteer-work-section > ul {
-    font-size: 1.2vw;
+    font-size: calc(1.2vw * var(--scale));
 }
 
 #volunteer-work-section > ul {
-    margin-left: 3vw;
+    margin-left: calc(3vw * var(--scale));
 }
 
 /* Awards Section */
 #awards-section {
-    margin-top: 2vw;
-    margin-left: 3vw;
+    margin-top: calc(2vw * var(--scale));
+    margin-left: calc(3vw * var(--scale));
 }
 
 #awards-section ul {
-    margin-top: 1vw;
-    margin-left: 2vw;
-    font-size: 1vw;    
+    margin-top: calc(1vw * var(--scale));
+    margin-left: calc(2vw * var(--scale));
+    font-size: calc(1vw * var(--scale));    
 }
 
 #awards-section ul li {
-    margin-top: 1vw;
+    margin-top: calc(1vw * var(--scale));
 }
 
 /* Media Queries */
+
+/* Mobile and Tablet Media */
 @media only screen and (max-width: 1366px) {
     :root {
-        scale: 1.764;
+        --view-height: calc(78vw * 1.6);
+        --view-width: calc(60vw * 1.6);
+        --scale: 1.6;
     }
+
+    .container {
+        margin: calc(1vw * var(--scale)) auto calc(1vw * var(--scale)) auto; 
+    }
+}
+
+/* Printing */
+@media only print {
+    :root {
+        --view-height: calc(78vw * 1.6);
+        --view-width: calc(60vw * 1.6);
+        --scale: 1.6;
+    }    
 }
