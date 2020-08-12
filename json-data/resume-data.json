@@ -134,6 +134,19 @@
                     "to": "January 2019"
                 }
             ]
+        },
+        {
+            "company": "Walmart USA",
+            "positions": [
+                {
+                    "title": "E-Commerce Associate",
+                    "from": "April 2019",
+                    "to": "January 2019"
+                }
+            ]
+        },
+        {
+            "company": "AIMSIO"          
         }
     ],
     "volunteerwork": [

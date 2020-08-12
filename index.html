@@ -103,6 +103,29 @@
                         });
                     }
                 });
+
+            //Work History
+            var workHistoryDiv = $('#work-history-section');
+                //Heading
+                $("<h3>").text("Work History").appendTo(workHistoryDiv);
+                
+                //Loop through Work History
+                $(data.workhistory).each(function(index, value) {
+                    var aWork = workHistoryDiv.append($("<div>").append(value.company));
+                    
+                    //If positions exist, showing them
+                    if(value.positions) {
+                        var posList = $("<ul>").appendTo(aWork);
+                        $(value.positions).each(function(posIndex, posValue) {
+                            var anItem = $("<li>").append(posValue.title).appendTo(posList);
+
+                            if(posValue.from && posValue.to) {
+                                anItem.append(" (" + posValue.from + " - " + posValue.to + ")");
+                            }
+                        });
+                    }
+                });
+
         });
     });
     </script>
