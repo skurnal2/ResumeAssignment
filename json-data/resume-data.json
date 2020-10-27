@@ -3,7 +3,7 @@
     "heading":{
         "name": "Siddharth Kurnal",
         "title": "Software Developer",
-        "about": "I have been a code lover for past 5 years. Looking at an IDE or a Text Editor always gets me excited to make something great. I love doing programming and have experimented with many languages and techniques. I am always up for programming challenges and ready to ace them. My main goal is to write beautiful and fast code."
+        "about": "I love everything that is related to computing and have been a code lover for past 5 years. I have worked with different elements of Computer Science and have a concrete understanding of how to get things done. Having experimented with several Programming languages, my programming foundation is rock solid. Having worked in a Agile team setting, I can smoothly integrate with any Software team and provide my special touch to the product. I am always up for programming challenges be it of any nature. If I will be a part of your team, I can guarantee of imposing a long lasting positive impact to the company."
     },
     "languages": [
         {
@@ -26,7 +26,7 @@
         },
         {
             "method": "email",
-            "description": "siddharthkurnal@gmail.com"
+            "description": "contact@siddharthkurnal.com"
         },
         {
             "method": "portfolio",
@@ -40,10 +40,8 @@
     "hobbies": [
         "Speed Typing (Typeracer)",
         "Outdoor Sports (Badminton, Cricket)",
-        "Indoor Sports (Table Tennis)",
-        "Learning new languages",
-        "Travelling and Exploring world",
-        "Cooking"        
+        "Indoor Sports (Table Tennis)",        
+        "Travelling and Exploring nature"        
     ],
     "education": [
         {

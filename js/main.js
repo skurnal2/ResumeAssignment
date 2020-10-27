@@ -89,7 +89,7 @@ $(document).ready(function() {
             
             //Loop through Work History
             $(data.workhistory).each(function(index, value) {
-                var aWork = workHistoryDiv.append($("<div>").append(value.company));
+                var aWork = workHistoryDiv.append($("<div class='company-format-text'>").append(value.company));
                 
                 //If positions exist, showing them
                 if(value.positions) {
@@ -111,7 +111,7 @@ $(document).ready(function() {
             
            //Loop through Volunteer Work
            $(data.volunteerwork).each(function(index, value) {
-                var aVolunteer = volunteerWorkDiv.append($("<div>").append(value.organization));
+                var aVolunteer = volunteerWorkDiv.append($("<div class='organization-format-text'>").append(value.organization));
                 
                 //If positions exist, showing them
                 if(value.positions) {

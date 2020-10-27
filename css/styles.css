@@ -144,7 +144,7 @@ h3 {
 
 /* Contact Section */
 #contact-section {
-    margin-top: calc(3vw * var(--scale));
+    margin-top: calc(2.5vw * var(--scale));
 }
 
 #contact-section h3 {
@@ -166,7 +166,7 @@ h3 {
 
 /* Hobbies Section */
 #hobbies-section {
-    margin-top: calc(5vw * var(--scale));
+    margin-top: calc(4.5vw * var(--scale));
     position: relative;
 }
 
@@ -199,6 +199,7 @@ h3 {
 .institute {
     font-weight: bold;
     margin-top: calc(1vw * var(--scale));
+    color: #253cce;
 }
 
 .program {
@@ -244,6 +245,11 @@ h3 {
     font-size: calc(1.1vw * var(--scale));    
 }
 
+.company-format-text {
+    color: #253cce;
+    font-weight: bold;
+}
+
 
 /* Volunteer Work Section */
 #volunteer-work-section {
@@ -261,6 +267,11 @@ h3 {
 
 #volunteer-work-section > ul {
     margin-left: calc(3vw * var(--scale));
+}
+
+.organization-format-text {
+    color: #253cce;
+    font-weight: bold;
 }
 
 /* Awards Section */
@@ -341,6 +352,10 @@ h3 {
     #print-option {
         top: calc(2vw * var(--scale));
     }
+
+    #location-name {
+        bottom: calc(15vw * var(--scale));
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -359,6 +374,10 @@ h3 {
 
     .box-shadow-3d:hover {
         transform: translate(4px, 5px);
+    }
+
+    #location-name {
+        bottom: calc(13vw * var(--scale));
     }
 }
 
