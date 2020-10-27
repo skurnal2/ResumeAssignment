@@ -148,7 +148,7 @@ $(document).ready(function() {
              });
 
         //Corner-Section (Setting Location Name)
-        $('#location-name').append(data.location);                
+        $('#location-name').append('<i class="fa fa-map-marker"></i> ').append(data.location);                
 
         //Print Button
         $('#print-option').click(function(){

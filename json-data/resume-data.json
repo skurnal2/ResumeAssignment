@@ -54,24 +54,22 @@
             "end": "April 2020"
         }
     ],
-    "skills": [
+    "skills": [        
         {
-            "description": "Software Development using",
+            "description": "Software/Web Development using",
             "subskills": [
                 "ASP.NET (C#, Entity Framework, LinQ)",
+                "Java (Maven), Python",
                 "PHP (Wordpress, WooCommerce)",
                 "JavaScript (ReactJs, VueJs, NodeJs)"
             ]
-        },
+        },   
         {
-            "description": "Great understanding of RESTful API"            
-        },
+            "description": "Great understanding of REST APIs"            
+        },    
         {
             "description": "Solid understanding of Object Oriented Principles"            
-        },
-        {
-            "description": "Other Languages like Java (Maven), C++, Python"
-        },
+        },        
         {
             "description": "Mobile Development (React Native, Flutter)",
             "subskills": [
@@ -88,23 +86,16 @@
             ]
         },
         {
-            "description": "Cloud Technologies",
-            "subskills": [
-                "Azure, Heroku"
-            ]
+            "description": "Web Designing using HTML5, CSS (SASS, Bootstrap)"
         },
         {
-            "description": "Web Designing using CSS (SASS, Bootstrap)"
-        },
-        {
-            "description": "Experience using Git (GitHub), Linux (Bash)"
+            "description": "expertise using Git (GitHub, BitBucket - SourceTree), Linux (Bash)"
         },
         {
             "description": "System Analysis and Methodologies",
-            "subskills": [
-                "SDLC",
-                "Data Flow Diagrams, UML",
-                "Scrum Methodology, Agile"
+            "subskills": [                
+                "Scrum Methodology, Agile - JIRA",
+                "Data Flow Diagrams, UML, SDLC"              
             ]
         },
         {

@@ -66,13 +66,12 @@ h3 {
 #location-name {
     position: absolute;
     font-weight: bold;
-    bottom: calc(12vw * var(--scale));
+    bottom: calc(15vw * var(--scale));
     left: calc(2.5vw * var(--scale));
     font-size: calc(3vw * var(--scale));
     color: white;
     opacity: .2;
 }
-
 
 /* Area Two */
 .area-two {
@@ -322,7 +321,7 @@ h3 {
     cursor: pointer;
     box-shadow: none;
     outline: none;
-    transform: translate(9px, 9px);
+    transform: translate(8px, 9px);
   }
 
 /* Media Queries */
@@ -341,6 +340,25 @@ h3 {
 
     #print-option {
         top: calc(2vw * var(--scale));
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    
+    .container {
+        border-radius: .7rem;
+    }
+
+    .box-shadow-3d {
+    box-shadow: 0px 1px 0px #060e42,
+                1px 2px 0px #060e42,
+                2px 3px 0px #060e42,
+                3px 4px 0px #060e42,
+                4px 5px 0px #060e42;
+    }
+
+    .box-shadow-3d:hover {
+        transform: translate(4px, 5px);
     }
 }
 
