@@ -150,11 +150,9 @@ $(document).ready(function() {
         //Corner-Section (Setting Location Name)
         $('#location-name').append(data.location);                
 
-    });
-
-    //Reading JSON Picture Data
-    $.getJSON('json-data/picture-data.json', function(data) {                           
-        $(".container").css("background-image", "url("+data.backgroundpicture+")");   
-        $("#corner-section").css("background-image", "url("+data.skylinepicture+")");            
+        //Print Button
+        $('#print-option').click(function(){
+            window.print();
+       });
     });
 });

@@ -122,6 +122,16 @@
     ],
     "workhistory": [
         {
+            "company": "Freelancing",
+            "positions": [
+                {
+                    "title": "Web/Mobile Developer",
+                    "from": "May 2020",
+                    "to": "Now"
+                }
+            ]
+        },
+        {
             "company": "Walmart Canada",
             "positions": [
                 {
@@ -137,7 +147,7 @@
             ]
         }
     ],
-    "volunteerwork": [
+    "volunteerwork": [        
         {
             "organization": "DSGMC",
             "positions": [

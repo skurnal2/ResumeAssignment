@@ -19,8 +19,11 @@ body {
     height: var(--view-height);
     width: var(--view-width);
     margin: calc(3vw * var(--scale)) auto calc(3vw * var(--scale)) auto;        
-    background-size: cover;
     overflow: hidden;
+    border-radius: 1.3rem;  
+
+    /* Background*/
+    background: rgba(37,60,206,1);
 
     /* Font */
     font-family: 'Raleway', sans-serif;
@@ -65,7 +68,7 @@ h3 {
     font-weight: bold;
     bottom: calc(12vw * var(--scale));
     left: calc(2.5vw * var(--scale));
-    font-size: calc(2.3vw * var(--scale));
+    font-size: calc(3vw * var(--scale));
     color: white;
     opacity: .2;
 }
@@ -277,6 +280,48 @@ h3 {
     margin-top: calc(1vw * var(--scale));
 }
 
+/* Print Option */
+#print-option {
+    position: absolute;
+    background-color: #253cce;
+    padding: .8rem 1.2rem;
+    font-family: "aileron", "sans-serif";
+    color: white;
+    border-radius: .2rem;    
+
+    top: calc(3.3vw * var(--scale));
+    right: calc(2vw * var(--scale));
+    height: calc(3.2vw * var(--scale));
+    font-size: calc(1.5vw * var(--scale));
+    line-height: calc(3.2vw * var(--scale));
+}
+
+/* Box Shadow 3D */
+.box-shadow-3d{
+    opacity: .9;
+    text-align: center;
+      
+  
+    box-shadow: 0px 1px 0px #060e42,
+                1px 2px 0px #060e42,
+                2px 3px 0px #060e42,
+                3px 4px 0px #060e42,
+                4px 5px 0px #060e42,
+                5px 6px 0px #060e42,
+                6px 7px 0px #060e42,
+                7px 8px 0px #060e42,
+                8px 9px 0px #060e42;
+  
+    transition: .5s;
+  }
+
+  .box-shadow-3d:hover{
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    transform: translate(9px, 9px);
+  }
+
 /* Media Queries */
 
 /* Mobile and Tablet Media */
@@ -288,10 +333,14 @@ h3 {
     }
 
     .container {
-        margin: calc(1vw * var(--scale)) auto calc(1vw * var(--scale)) auto; 
+        margin: calc(8vw * var(--scale)) auto calc(1vw * var(--scale)) auto; 
+    }
+
+    #print-option {        
+        top: calc(2.5vw * var(--scale));                
+        
     }
 }
-
 /* Printing */
 @media only print {    
     :root {
@@ -303,10 +352,15 @@ h3 {
     .container {
         margin: 0 auto;
         box-shadow: none;
+        border-radius: 0%;
         
         /* Changing Font because Raleway shows abnormally when printing */
         font-family: 'Arimo', sans-serif;       
     }  
+
+    #print-option {
+        display: none;
+    }
 
     /* Removing Extra Spaces */
     .area-two {
