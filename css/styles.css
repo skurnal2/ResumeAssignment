@@ -288,12 +288,15 @@ h3 {
     font-family: "aileron", "sans-serif";
     color: white;
     border-radius: .2rem;    
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /*align vertical */
 
     top: calc(3.3vw * var(--scale));
     right: calc(2vw * var(--scale));
     height: calc(3.2vw * var(--scale));
     font-size: calc(1.5vw * var(--scale));
-    line-height: calc(3.2vw * var(--scale));
+    
 }
 
 /* Box Shadow 3D */
@@ -336,11 +339,11 @@ h3 {
         margin: calc(8vw * var(--scale)) auto calc(1vw * var(--scale)) auto; 
     }
 
-    #print-option {        
-        top: calc(2.5vw * var(--scale));                
-        
+    #print-option {
+        top: calc(2vw * var(--scale));
     }
 }
+
 /* Printing */
 @media only print {    
     :root {
